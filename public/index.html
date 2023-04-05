@@ -1,43 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<div class="container">
+	<div class="row">
+	  <div class="col-md-6">
+	      <form method="post" action="#" id="#">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
-</html>
+              <div class="form-group files color">
+<form class="form-horizontal">
+  <fieldset>
+  
+  <!-- Form Name -->
+  <legend>Form Name</legend>
+  
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="firstname">First Name</label>  
+    <div class="col-md-4">
+    <input id="firstname" name="firstname" type="text" placeholder="IMaaS" class="form-control input-md">
+    <span class="help-block">Your first name</span>  
+    </div>
+  </div>
+  
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="lastname">Last Name</label>  
+    <div class="col-md-4">
+    <input id="lastname" name="lastname" type="text" placeholder="Demo" class="form-control input-md">
+    <span class="help-block">Your last name</span>  
+    </div>
+  </div>
+  
+  <!-- Textarea -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="addinfo">Additional Information</label>
+    <div class="col-md-4">                     
+      <textarea class="form-control" id="addinfo" name="addinfo">Contract</textarea>
+    </div>
+  </div>
+  
+  <!-- File Button --> 
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="filebutton">File Button</label>
+    <div class="col-md-4">
+      <input id="filebutton" name="filebutton" class="input-file" type="file">
+    </div>
+  </div>
+  
+  <!-- Button Drop Down -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="filetype">Define filetype</label>
+    <div class="col-md-4">
+      <div class="input-group">
+        <input id="filetype" name="filetype" class="form-control" placeholder="PDF" type="text">
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Action
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu pull-right">
+            <li><a href="#">PDF</a></li>
+            <li><a href="#">Word</a></li>
+            <li><a href="#">Image</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Button -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="submit">Submit</label>
+    <div class="col-md-4">
+      <button id="submit" name="submit" class="btn btn-primary">Submit</button>
+      <button onclick="Capture"></button>
+      
+    </div>
+  </div>
+  
+  </fieldset>
+  </form> 
